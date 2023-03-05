@@ -27,16 +27,16 @@ function getAPI(){
      var wind = data.wind.speed;
      var humidity = data.main.humidity;
         localStorage.setItem("cityname", cityname);
-      tempEl.textContent = "Temp:" + temp;
-      windEl.textContent = "Wind:" + wind;
-      humidityEl.textContent = "Humidity:" + humidity;
+      tempEl.text("Temp:" + temp);
+      windEl.text("Wind:" + wind);
+      humidityEl.text("Humidity:" + humidity);
 
 
       var pastCity =localStorage.getItem("cityname");
       var recentBTN = document.createElement("button");
         recentBTN.setAttribute("class","past-searches");
         recentBTN.textContent=pastCity;
-        pastEL.appendChild(recentBTN);
+        pastEl.append(recentBTN);
       
     });
 
@@ -46,7 +46,7 @@ function getAPI(){
 
   };
 
- 
+  
         
 
 
