@@ -1,0 +1,32 @@
+button {
+    background-color: rgb(106, 106, 235);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 8em;
+    padding-right: 8em;
+    border: solid crimson;
+    font-weight: bolder;
+    font-size: larger;
+}
+h1 {
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    font-size:4em;
+    
+}
+.city-container{
+    border: solid black;
+}
+
+.search-bar{
+    white-space: pre-wrap;
+    font-size: 2em;
+}
+.city-name{
+    text-align: center;
+}
+.past-searches{
+    display: block;
+    background-color: white;
+}
