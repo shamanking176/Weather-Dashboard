@@ -86,7 +86,7 @@ function getAPI(cityname){
       for(i=1, j=0; i<6; i++, j++){
       
       var day = dayofweek[j];
-      
+      day[0].innerHTml="";
       var newDay = dayjs().add(i,'day').format('MM/DD/YYYY');
       console.log(day);
       var icon = data.list[i].weather[0].icon;
@@ -96,10 +96,6 @@ function getAPI(cityname){
        var temp= document.createElement("li");
        var wind= document.createElement("li");
        var humidity = document.createElement("li");
-       temp.classList.add("clear");
-       wind.classList=("clear");
-       humidity.classList.add("clear");
-       date.classList.add("clear");
        date.textContent = newDay;
        temp.textContent=data.list[i].main.temp;
        wind.textContent=data.list[i].wind.speed;;
@@ -117,7 +113,7 @@ function getAPI(cityname){
     var cityname = city.val();
     getAPI(cityname);
     city.val('');
-    $('.clear').val('');
+    
   });
  
 
