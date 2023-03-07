@@ -7,6 +7,7 @@ button {
     border: solid crimson;
     font-weight: bolder;
     font-size: larger;
+    width: 23em;
 }
 h1 {
     color: white;
@@ -17,11 +18,14 @@ h1 {
 }
 .city-container{
     border: solid black;
+    
 }
 
 .search-bar{
     white-space: pre-wrap;
     font-size: 2em;
+    width: 13.8em;
+    height: 2em;
 }
 .city-name{
     text-align: center;
@@ -29,4 +33,18 @@ h1 {
 .past-searches{
     display: block;
     background-color: white;
+}
+.search-container {
+    display:flex;
+    flex-direction: column;
+    width: 25%
+}
+.general-font{
+    font-size: 2em;
+}
+.daily {
+    color: black;
+}
+ul{
+    background-color: blue;
 }
